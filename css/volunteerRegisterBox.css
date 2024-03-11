@@ -8,8 +8,8 @@
     --black: #252525;
     --salmonColor: #EF6F6C;
     --textFont: "Noto Sans", sans-serif;
-    --bigTitleFont: "Righteous", sans-serif;
-    --smallTitleFont: "Fira Sans Extra Condensed", sans-serif;
+    --bigTitleFont: "Righteous", sans-serif; /* Font for buttons and big titles */
+    --smallTitleFont: "Fira Sans Extra Condensed", sans-serif; /* Font small titles */
 }
 
 .outerShadow {
