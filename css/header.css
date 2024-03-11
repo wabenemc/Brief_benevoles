@@ -17,6 +17,12 @@
     padding: 0;
 }
 
+
+.headerBox {
+    width: 100vw;
+    height: 980px;
+  }
+
 .mainNavBox {
     margin: 10px 0px 0px 30px;
     width: 336px;
@@ -47,6 +53,12 @@
     font-family: var(--bigTitleFont);
     width: 135px;
     height: 40px;
+    transition-duration: 0.3s;
+}
+
+.mainButton:hover {
+    background-color: var(--salmonColor);
+    transition-duration: 0.3s;
 }
 
 .secondaryButton {
@@ -54,5 +66,11 @@
     text-decoration: none;
     font-family: var(--bigTitleFont);
     color: var(--white);
+    transition-duration: 0.3s;
+}
+
+.secondaryButton:hover {
+    transform: translateX(10px);
+    transition-duration: 0.3s;
 }
 

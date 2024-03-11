@@ -5,6 +5,6 @@
             </div>
             <div class="registerLoginButtons">
                 <a class="coloredButton outerShadow" href="#">Sign In</a>
-                <a class="coloredButton outerShadow" href="#">Sign Up</a>
+                <a class="coloredButton outerShadow" href="./../pages/volunteerRegistration.php">Sign Up</a>
             </div>
         </div>

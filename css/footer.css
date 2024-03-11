@@ -1,62 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
-  --mainColor: #56e39f;
+  --mainColor: #56E39F;
   --secondaryColor: #465775;
-  --darkMainColor: #59c9a5;
-  --lightMainColor: #b8e3bd;
-  --borderColor: #cccccc;
-  --white: #fafafa;
+  --darkMainColor: #59C9A5;
+  --lightMainColor: #B8E3BD;
+  --borderColor: #CCCCCC;
+  --white: #FAFAFA;
   --black: #252525;
-  --salmonColor: #ef6f6c;
-  --iconetwitter : skyblue;
-  --iconefacebook : blue;
-  --iconelinkedin : blue;
-
-
+  --salmonColor: #EF6F6C;
+  --textFont: "Noto Sans", sans-serif;
+  --bigTitleFont: "Righteous", sans-serif; /* Font for buttons and big titles */
+  --smallTitleFont: "Fira Sans Extra Condensed", sans-serif; /* Font small titles */
+  --iconetwitter : #1DA1F2;
+  --iconefacebook : #4267B2;
+  --iconelinkedin : #0a66c2;
 }
 
-.footer {
+.footerMainBox {
   display: flex;
   flex-direction: row;
   background-color: var(--secondaryColor);
   width: 100vw;
-  height: 215px;
   justify-content: space-evenly;
   align-items: center;
   font-family: Arial, sans-serif;
+  padding: 20px 0px 20px 0px;
+}
+
+.footerLogosBox {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+  width: 250px;
+}
+
+.footerSocialMedia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
 }
 
 img {
-  width: 170px;
-  margin-right: 20px;
-  float: left;
+  width: 200px;
 }
 
-.footer-1 {
+.facebookLogo {
+  width: 30px;
+}
+
+.twitterLogo {
+  width: 30px;
+}
+
+.linkedInLogo {
+  width: 30px;
+}
+
+.footerTextBox {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 40px;
-  width: 470px;
+  width: 500px;
+  height: 125px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   color: var(--white);
+  font-family: var(--smallTitleFont);
 }
 
-.fa-square-facebook{
-  font-size: 25px;
-  color: var(--iconefacebook);
+.footerMainText {
+  font-size: 17px;
+  font-weight: 500;
+}
 
+.footerCopyText {
+  font-size: 14px;
 }
-.fa-linkedin{
-  font-size: 25px;
-  color: var(--iconelinkedin);
-}
-.fa-square-twitter{
-  font-size: 25px;
-  color: var(--iconetwitter);
-}
-.liste {
+
+.listBox {
   display: flex;
   line-height: 1.5;
   font-size: 14px;
@@ -64,13 +85,20 @@ img {
   justify-content: center;
   align-items: center;
   color: var(--white);
+  width: 250px;
 }
-.liste-2 {
+.listText {
   display: flex;
   flex-direction: column;
   font-size: 14px;
   text-align: right;
-  
+  list-style-type: none;
+  font-family: var(--smallTitleFont);
+}
+
+.listTitle {
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .footer li {
@@ -78,3 +106,30 @@ img {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 500px) {
+  .footerTextBox {
+    width: auto;
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .footerMainBox {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footerLogosBox {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .footerSocialMedia {
+    flex-direction: row;
+    align-self: center;
+  }
+
+  .listText {
+    text-align: center;
+  }
+}
